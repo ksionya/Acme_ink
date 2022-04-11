@@ -14,6 +14,7 @@
   align-items: center;
 }
 .header-buttons {
+  transition: all 0.2s ease;
   .btn {
     font-weight: 700;
     font-size: 16px;
@@ -31,9 +32,14 @@
     border: 1px solid #FFFFFF;
     box-shadow: none;
     padding: 16px 23px 15px;
+    &:hover {
+      border: 1px solid $colorred;
+      color: $colorred;
+    }
   }
 }
 .header-menu {
+  transition: all 0.2s ease;
   ul {
     list-style: none;
     padding: 0;
@@ -81,4 +87,8 @@
     }
   }
 }
-
+.logo {
+  img {
+    display: block;
+  }
+}

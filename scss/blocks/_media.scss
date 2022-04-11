@@ -47,6 +47,7 @@
   .white-block_left {
     h2 {
       font-size: 40px;
+      padding: 0 10px 0 0;
     }
   }
   .grey-block {
@@ -66,8 +67,18 @@
   }
   .features-item {
     &:first-child {
-      margin: 0 0 0 424px;
+      margin: 0 0 0 320px;
     }
+  }
+  .logo {
+    img {
+      width: 150px;
+    }
+  }
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -76,7 +87,7 @@
     justify-content: center;
     margin: 0 -10px;
     a {
-      margin: 0 0 29px;
+      margin: 0 0 31px;
       padding: 0 10px;
     }
     img {
@@ -84,10 +95,11 @@
     }
   }
   .partners-block {
-    padding: 30px 0 41px;
+    padding: 23px 0 40px;
     h2 {
       font-size: 30px;
       line-height: 35px;
+      margin: 0 0 42px;
     }
   }
   .statistics-block {
@@ -120,7 +132,7 @@
       font-size: 20px;
       line-height: 23px;
       padding: 22px 0 0;
-      margin: 0 0 12px;
+      margin: 0 0 15px;
     }
     .in {
       width: auto;
@@ -142,6 +154,7 @@
   }
   .burger {
     display: block;
+    margin: 8px 6px 0 0;
   }
   .header-menu {
     display: none;
@@ -150,7 +163,7 @@
     display: none;
   }
   .header {
-    padding: 20px 0 16px;
+    padding: 25px 0 16px;
   }
 
   .header-menu.open {
@@ -167,7 +180,7 @@
   .header-buttons.open {
     display: block;
     position: absolute;
-    top: 159px;
+    top: 160px;
     width: 100%;
     left: 0;
     text-align: center;
@@ -178,18 +191,21 @@
     h3 {
       font-size: 20px;
       line-height: 23px;
-      margin: 0 0 12px;
-      padding: 22px 0 0;
+      margin: 0 0 10px;
+      padding: 28px 0 0;
     }
     h2 {
       font-size: 30px;
       line-height: 35px;
-      margin: 0 0 30px;
+      margin: 0 0 20px;
     }
     p {
       font-size: 18px;
       line-height: 26px;
-      margin: 0 0 30px;
+      margin: 0 0 23px;
+    }
+    .btn {
+      padding: 29px 15px 30px;
     }
   }
   .grey-block_img {
@@ -206,33 +222,71 @@
   }
   .testimonials-item {
     .in {
-      min-height: 251px;
+      min-height: 300px;
     }
 
   }
+  .features-item {
+    &:first-child {
+      margin: 0;
+    }
+    img {
+      margin: 0 0 23px;
+    }
+    h3 {
+      margin: 0px 0 20px;
+    }
+  }
+  .features-block_title {
+    position: relative;
+    top: auto;
+    left: auto;
+    h2 {
+      margin: 0 0 35px;
+      max-width: none;
+    }
 
+  }
+  .features-list {
+
+    .slick-list {
+      padding: 0 0 90px;
+    }
+    .slick-prev {
+      left: 36px;
+    }
+    .slick-next {
+      right: 36px;
+    }
+    .slick-dots {
+      bottom: 22px;
+
+    }
+  }
 
 
 }
 @media screen and (max-width: 768px) {
   .testimonials-list {
-    padding: 0 0 90px;
+    padding: 0 8px 90px 8px;
   }
   .credit-score {
     padding: 83px 0 49px;
     h3 {
       font-size: 20px;
       line-height: 23px;
-      margin: 0 0 12px;
+      margin: 0 0 4px;
     }
     h2 {
       font-size: 30px;
       line-height: 35px;
-      margin: 0 0 35px;
+      margin: 0 0 23px;
     }
     p {
       font-size: 18px;
       line-height: 26px;
+      padding: 0 17px;
+      text-align: initial;
     }
   }
   .statistics-item {
@@ -240,11 +294,12 @@
 
   }
   .statistics-item_in {
-    padding: 30px 27px 30px;
+    padding: 30px 27px 25px;
     min-height: 406px;
     h3 {
       font-size: 20px;
       line-height: 26px;
+      margin: 0 0 25px;
     }
     p {
       font-size: 18px;
@@ -253,9 +308,12 @@
     b {
       font-size: 64px;
       line-height: 64px;
+      margin: 0 0 53px;
       &:after {
         width: 145px;
         height: 5px;
+        margin: 0 0 0 -53px;
+        bottom: -27px;
       }
     }
     i {
@@ -264,8 +322,13 @@
   }
   .statistics-list {
     margin: 0;
+    padding: 0 18px;
+  }
+  .statistics-block {
+    padding: 100px 0 40px;
   }
   .footer-right {
+    padding: 41px 13px 0;
     b {
       font-size: 18px;
       line-height: 26px;
@@ -273,16 +336,23 @@
     p {
       font-size: 16px;
       line-height: 26px;
-      margin: 0 0 20px;
+      margin: 0 0 16px;
     }
     input {
       width: 100%;
       margin: 0 0 20px 0;
     }
   }
+  .footer-left {
+    padding: 50px 0 0;
+  }
+
   .footer-menu {
     li {
       width: 100%;
+    }
+    a {
+      font-size: 16px;
     }
   }
   .white-block_left {
@@ -290,19 +360,20 @@
     h2 {
       font-size: 30px;
       line-height: 35px;
-      margin: 0 0 55px;
+      margin: 0 0 49px;
     }
   }
   .white-block_right {
     width: 100%;
     p {
       max-width: none;
+      padding: 21px 0px 0 0px;
     }
   }
   .white-block {
-    height: 291px;
+    height: 302px;
     .in {
-
+      top: -77px;
       padding: 29px 31px 33px;
     }
   }
@@ -322,7 +393,8 @@
     }
     .bg {
       height: auto;
-      width: 73%;
+      width: 75%;
+      max-height: 535px;
     }
 
   }
@@ -342,7 +414,7 @@
     padding: 42px 0;
     text-align: right;
     img {
-      width: 58%;
+      width: 62%;
     }
   }
   .btn {
@@ -354,7 +426,7 @@
     top: auto;
     left: auto;
     h2 {
-      margin: 0 0 35px;
+      margin: 0 0 30px;
       max-width: none;
       font-size: 30px;
       line-height: 35px;
@@ -362,12 +434,12 @@
     h3 {
       font-size: 20px;
       line-height: 23px;
-      margin: 0 0 12px;
-      padding: 22px 0 0;
+      margin: 0 0 6px;
+      padding: 28px 0 0;
     }
   }
   .features-item {
-    padding: 30px 34px 41px 24px;
+    padding: 30px 34px 36px 24px;
     &:first-child {
       margin: 0;
     }
@@ -377,32 +449,26 @@
     }
 
   }
-  .features-list {
-    .slick-list {
-      padding: 0 0 90px;
-    }
-    .slick-prev {
-      left: 40px;
-    }
-    .slick-next {
-      right: 40px;
-    }
-  }
+.features-block {
+  padding: 14px 0 54px;
+}
   .in-main {
     padding: 0;
     h2 {
       font-size: 20px;
       line-height: 23px;
+      margin: 0 0 17px;
     }
     h1 {
       font-size: 30px;
       line-height: 35px;
-      margin: 0 0 36px;
+      margin: 0 0 28px;
+      padding: 0 65px 0 0;
     }
     p {
       font-size: 18px;
       line-height: 26px;
-      margin: 0 0 36px;
+      margin: 0 0 30px;
     }
   }
   .logo {
@@ -422,7 +488,38 @@
 
   }
   .main {
-    padding: 163px 0 417px;
+    padding: 117px 0 423px;
     height: auto;
+    overflow: hidden;
   }
+  .bg-main {
+    top: auto;
+    bottom: 0;
+    object-fit: cover;
+    height: 446px;
+    right: -100px;
+  }
+  .header-buttons.open {
+    top: 210px;
+  }
+  .testimonials-block {
+    padding: 62px 0 70px;
+    h2 {
+      font-size: 30px;
+      line-height: 35px;
+      margin: 0 0 32px;
+    }
+  }
+  .testimonials-item {
+    b {
+      margin: -11px 0 0;
+    }
+    .in {
+      min-height: 250px;
+    }
+  }
+
+
+
 }
+
