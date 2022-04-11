@@ -1,6 +1,6 @@
 .header {
   background: rgba(0, 0, 0, 0.25);
-  padding: 17px 0;
+  padding: 14px 0 16px;
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -30,10 +30,9 @@
     width: auto;
     border: 1px solid #FFFFFF;
     box-shadow: none;
-    padding: 15px 23px 14px;
+    padding: 16px 23px 15px;
   }
 }
-
 .header-menu {
   ul {
     list-style: none;
@@ -51,9 +50,35 @@
     text-transform: uppercase;
     text-decoration: none;
     color: $colorwhite;
+    transition: all 0.2s ease;
+    &:hover {
+      color: $colorred;
+      svg {
+       path {
+         fill: $colorred;
+         stroke: $colorred;
+       }
+      }
+    }
   }
   svg {
     vertical-align: middle;
     margin: 0 20px 0 0;
+    transition: all 0.2s ease;
   }
 }
+.burger {
+  display: none;
+  cursor: pointer;
+  svg {
+    transition: all 0.2s ease;
+  }
+}
+.burger.open {
+  svg {
+    path {
+      fill: $colorred;
+    }
+  }
+}
+
