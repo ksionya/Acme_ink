@@ -1,18 +1,19 @@
+$colorred: #B22532;
+$colorwhite: #fff;
+$colorblack: #383838;
+$colorblue: #2E86AB;
+$colorgrey: #F5F5F5;
 body {
   font-family: 'Roboto';
   font-style: normal;
-  $colorblack: #383838;
+  color: $colorblack;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   min-width: 390px;
 }
 
-$colorred: #B22532;
-$colorwhite: #fff;
-$colorblack: #383838;
-$colorblue: #2E86AB;
-$colorgrey: #F5F5F5;
+
 .wrapper {
   width: 100%;
   margin: 0 auto;

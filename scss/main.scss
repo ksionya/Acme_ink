@@ -1,7 +1,5 @@
-@import './blocks/jquery.fancybox.min';
 @import './blocks/normalize';
 @import './blocks/slick';
-@import './blocks/select2.min';
 @import './blocks/variable';
 @import './blocks/header';
 @import './pages/home';
@@ -240,8 +238,6 @@ float: left;
     margin: 0 0 0 -8px;
   }
 }
-//
-//
 .grey-block {
   background: #F5F5F5;
   padding: 60px 0 33px;
@@ -461,6 +457,7 @@ padding: 62px 0 62px;
 .features-item {
   width: 33.3%;
   border: 1px solid rgba(172, 172, 172, 0.5);
+  border-left: none;
   box-sizing: border-box;
   padding: 39px 40px 28px 36px;
   float: left;
@@ -482,10 +479,17 @@ padding: 62px 0 62px;
   }
   &:first-child {
     margin: 0 0 0 426px;
+    border-left: 1px solid rgba(172, 172, 172, 0.5);
+    border-bottom: none;
   }
   &:nth-child(3) {
     clear: both;
+    border-left: 1px solid rgba(172, 172, 172, 0.5);
   }
+  &:nth-child(2) {
+    border-bottom: none;
+  }
+
 }
 .slick-arrow {
   width: 60px;
@@ -531,6 +535,9 @@ padding: 62px 0 62px;
       background: $colorred;
     }
   }
+}
+.wow {
+  overflow: hidden;
 }
 @import './blocks/footer';
 @import './blocks/media';
