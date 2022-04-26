@@ -35,13 +35,14 @@ function mobileCarousel() {
 
 function mobileMenu() {
   $('.burger').on('click', function(event) {
-    $('.burger, .header-menu, .header-buttons').toggleClass('open');
+    $('.burger, .header').toggleClass('open');
+    $('body').toggleClass('js-noscroll');
   });
   $('body').on('click', function(e) {
-    if ($(e.target).hasClass('header-menu')) {
+    if ($(e.target).hasClass('header')) {
       $('.burger').removeClass('open');
-      $('.header-menu').removeClass('open');
-      $('.header-buttons').removeClass('open');
+      $('.header').removeClass('open');
+      $('body').removeClass('js-noscroll');
     }
 
   })
